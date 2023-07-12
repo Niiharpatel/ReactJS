@@ -7,21 +7,26 @@ import Body from '../ClassComp/Body'
 import Footer from '../ClassComp/Footer'
 
 import Functional from '../FunctionalComp/Functional'
+import Mainsec from '../FunctionalComp/Mainsec'
+import Footerfun from '../FunctionalComp/Footerfun'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <App /> */}
 
-     {/* <ClassCom /> 
+    {/* <ClassCom /> 
 
      <Body /> 
 
      <Footer />*/}
 
 
-     <Functional />
-     
+    <Functional />
+
+    <Mainsec />
+
+    <Footerfun />
 
   </React.StrictMode>,
 )
