@@ -10,23 +10,27 @@ import Functional from '../FunctionalComp/Functional'
 import Mainsec from '../FunctionalComp/Mainsec'
 import Footerfun from '../FunctionalComp/Footerfun'
 
+import UsrState from '../../UsrState'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <App /> */}
 
-    {/* <ClassCom /> 
+    {/* <ClassCom />
 
-     <Body /> 
+    <Body />
 
-     <Footer />*/}
+    <Footer /> */}
 
 
-    <Functional />
+    {/* <Functional />
 
     <Mainsec />
 
-    <Footerfun />
+    <Footerfun /> */}
+
+    <UsrState />
 
   </React.StrictMode>,
 )
