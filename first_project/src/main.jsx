@@ -15,6 +15,7 @@ import Footerfun from '../FunctionalComp/Footerfun'
 // import Fontcolorchange from './UseState/Fontcolorchange'
 
 import Fontcolorchange2 from './UseState/Fontcolorchange2'
+import FunProps from './Props/FunProps'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -38,7 +39,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
     {/* <Fontcolorchange /> */}
 
-    <Fontcolorchange2 />
+    {/* <Fontcolorchange2 /> */}
+
+    <FunProps name={"Niihar"} />
+
+    {/* <FunProps obj={{
+      name: "Niihar",
+      age: 23
+    }} /> */}
 
 
 
