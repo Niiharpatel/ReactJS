@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-export default function FunProps(props) {
+export default function FunProps(props) {      // Change props value using useState...
 
     let [changeName, setChangeName] = useState(props.name);
 
