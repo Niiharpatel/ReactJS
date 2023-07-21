@@ -2,43 +2,81 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import ClassProps from './Props/ClassProps'
+import Functional from '../FunctionalComp/Functional'
+import Mainsec from '../FunctionalComp/Mainsec'
+import Footerfun from '../FunctionalComp/Footerfun'
+import ClassCom from '../ClassComp/ClassCom'
+import Body from '../ClassComp/Body'
+import Footer from '../ClassComp/Footer'
+// import UsrState from '../../UsrState';
+import Fontcolorchange from './UseState/Fontcolorchange'
+import Fontcolorchange2 from './UseState/Fontcolorchange2'
+import FunProps from './Props/FunProps'
+import PropsDestructuring from './Props/PropsDestructering'
+import ConditionalRendor from './ConditionalRen-Map-Fragment/ConditionalRendor'
+import FragmentComp from './ConditionalRen-Map-Fragment/FragmentComp'
+import MapKey from './ConditionalRen-Map-Fragment/MapKey'
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  let h2 = <h1> test ---------- {5 + 10}</h1>
-
   return (
-    <>
-      <h3>{h2}</h3>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
+    <div>
+      {/* <ClassCom />
+
+     <Body />
+
+     <Footer /> */}
 
 
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* <Functional />
 
-    </>
-  )
+     <Mainsec />
+
+     <Footerfun /> */}
+
+      {/* <UsrState /> */}
+
+      {/* <Fontcolorchange /> */}
+
+      {/* <Fontcolorchange2 /> */}
+
+      {/* <FunProps name={"Niihar"} /> */}
+
+      {/* <ClassProps name={"This is class props"} /> */}
+
+      {/* <FunProps obj={{
+      name: "Niihar",
+       age: 23
+     }} /> */}
+
+      {/*================================ Props Destructering ================================================ */}
+
+      {/* <PropsDestructuring name={"Niihar"} age={23} /> */}
+
+      {/* ================================ Conditional Rendering ============================================== */}
+
+      {/* <ConditionalRendor isMale={false} />
+
+      <ConditionalRendor isMale={true} /> */}
+
+      {/* <ConditionalRendor isMale={true} isYoung={true} /> */}
+
+      {/* ==================================== Fragment ====================================================== */}
+
+      {/* <FragmentComp /> */}
+
+      {/* ========================================= Map ====================================================== */}
+
+      <MapKey />
+
+
+
+
+    </div>
+  );
 }
 
 export default App
+
