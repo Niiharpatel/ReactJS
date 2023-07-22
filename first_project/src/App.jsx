@@ -17,7 +17,8 @@ import PropsDestructuring from './Props/PropsDestructering'
 import ConditionalRendor from './ConditionalRen-Map-Fragment/ConditionalRendor'
 import FragmentComp from './ConditionalRen-Map-Fragment/FragmentComp'
 import MapKey from './ConditionalRen-Map-Fragment/MapKey'
-import Task from './ConditionalRen-Map-Fragment/Task'
+// import Task from './ConditionalRen-Map-Fragment/Task'
+import Mapcom from './ConditionalRen-Map-Fragment/Mapcom'
 
 
 
@@ -72,7 +73,9 @@ function App() {
 
       {/* <MapKey /> */}
 
-      <Task />
+      {/* <Task /> */}
+
+      <Mapcom />
 
 
 

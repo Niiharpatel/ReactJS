@@ -6,7 +6,7 @@ export default function ConditionalRendor(props) {
 
     // ====================================== OR ==================================================
 
-    // if (props.isMale) {
+    // if (props.isMale) {    
     //     return (
     //         <>
     //             <h1>Yes, He is a boy.</h1>
