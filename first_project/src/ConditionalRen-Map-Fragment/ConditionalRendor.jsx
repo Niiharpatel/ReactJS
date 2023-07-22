@@ -24,11 +24,11 @@ export default function ConditionalRendor(props) {
 
     // ====================================== OR ==================================================
 
-    // return (
-    //     <>{
-    //         props.isYoung ? <h2>Yes he is Young</h2> : <h2> No he is not Young</h2>
-    //     }
-    //     </>
-    // )
+    return (
+        <>{
+            props.isYoung ? <h2>Yes he is Young</h2> : <h2> No he is not Young</h2>
+        }
+        </>
+    )
 
 }
