@@ -19,6 +19,9 @@ import FragmentComp from './ConditionalRen-Map-Fragment/FragmentComp'
 import MapKey from './ConditionalRen-Map-Fragment/MapKey'
 // import Task from './ConditionalRen-Map-Fragment/Task'
 import Mapcom from './ConditionalRen-Map-Fragment/Mapcom'
+import { Card } from 'react-bootstrap'
+import Bootcom from './Bootstrap/Bootcom'
+import Bootmapcom from '../Task/BootCard/Bootmapcom'
 
 
 
@@ -75,7 +78,17 @@ function App() {
 
       {/* <Task /> */}
 
-      <Mapcom />
+
+      {/* ============================================== Card ================================================= */}
+
+      {/* <Mapcom /> */}
+
+      {/* ================================================= Bootstrap ========================================= */}
+
+      {/* <Bootcom /> */}
+
+      <Bootmapcom />
+
 
 
 
