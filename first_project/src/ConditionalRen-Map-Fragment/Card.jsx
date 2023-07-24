@@ -1,21 +1,44 @@
 import React from 'react'
 import "./Card.css";
 
-function Card() {
+function Card(props) {
     return (
         <>
             <div className="main">
-                <div className='card'>
-                    <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=600" className='card_img' />
-                </div>
+
+                <img src={props?.cardData?.img} className='card_img' />
+
                 <div className='card_det'>
-                    <h3>Product Name:Test</h3>
-                    <h3>Price:100</h3>
-                    <h3>Description: Its good</h3>
+                    <h3>Product Name:{props?.cardData?.ProductName}</h3>
+                    <h3>Price:{props?.cardData?.Price}</h3>
+                    <h3>Description:{props?.cardData?.Description}</h3>
                 </div>
             </div>
         </>
-    )
+    );
 }
 
 export default Card
+
+
+//======================================== Props Destructering ===========================================
+
+// let props = { cardData: { ...e } };
+// let { cardData } = props;
+
+// export default function Card({ cardData }) {
+//     return (
+//         <>
+//             <div className="main">
+
+//                 <img className="card_img" src={cardData?.img} />
+
+//                 <div className="card_det">
+//                     <h3>Product Name : {cardData?.productName}</h3>
+//                     <h3>Price: {cardData?.Price}</h3>
+//                     <h3>Description : {cardData?.Description}</h3>
+//                 </div>
+//             </div>
+//         </>
+//     );
+// }
