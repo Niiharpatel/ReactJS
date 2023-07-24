@@ -21,7 +21,7 @@ function Card(props) {
 export default Card
 
 
-//======================================== Props Destructering ===========================================
+//======================================== Props Destructuring ===========================================
 
 // let props = { cardData: { ...e } };
 // let { cardData } = props;
