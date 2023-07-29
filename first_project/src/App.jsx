@@ -20,8 +20,11 @@ import MapKey from './ConditionalRen-Map-Fragment/MapKey'
 // import Task from './ConditionalRen-Map-Fragment/Task'
 import Mapcom from './ConditionalRen-Map-Fragment/Mapcom'
 import { Card } from 'react-bootstrap'
-import Bootcom from './Bootstrap/Bootcom'
-import Bootmapcom from '../Task/BootCard/Bootmapcom'
+import InputCom from './Input/InputCom'
+import Task from './Input/Task'
+// import Bootcom from './Bootstrap/Bootcom'
+// import Bootmapcom from '../Task/BootCard/Bootmapcom'
+// import NavScrollExample from '../Webpage/Header'
 
 
 
@@ -87,7 +90,18 @@ function App() {
 
       {/* <Bootcom /> */}
 
-      <Bootmapcom />
+      {/* <Bootmapcom /> */}
+
+
+      {/* =============================================== WebPage ============================================== */}
+
+      {/* <NavScrollExample /> */}
+
+      {/* ================================================ Input =============================================== */}
+      {/* <InputCom /> */}
+
+
+      {/* <Task /> */}
 
 
 
