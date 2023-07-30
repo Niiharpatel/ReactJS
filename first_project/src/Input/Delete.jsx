@@ -12,9 +12,12 @@ function Delete() {
 
     function setData() {
 
-        setArr([...arr, name]);
-        setName("");
+        // setArr([...arr, name]);
+        // setName("");
 
+        // ================== OR ================================
+
+        name.length > 0 ? (setArr([...arr, name]), setName("")):alert("Please enter name!")
     }
 
     // ==========================================   Delete  ============================================================
