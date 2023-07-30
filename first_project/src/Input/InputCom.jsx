@@ -4,20 +4,20 @@ function InputCom() {
 
     let [name, setName] = useState("");
     let [arr, setArr] = useState([]);
-
+                             
 
     function getData(e) {
         setName(e.target.value);
-
     }
 
     function addData() {
         setArr([...arr, name]);
         setName("");
     }
+
     return (
         <>
-            <label htmlFor="">Name:  </label>
+            <label htmlFor="">Name: </label>
             <input type="text" id='name' value={name} placeholder='Please Enter Your Name' onChange={(e) => getData(e)} />
 
             <button onClick={() => addData()}>Add Name</button>
