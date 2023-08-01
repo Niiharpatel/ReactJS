@@ -1,0 +1,22 @@
+/* ============================== Navbar =============================================== */
+
+.main {
+  background-color: black;
+  padding: 15px !important;
+}
+
+nav {
+  color: white !important;
+}
+Carousel.caption {
+  top: 0 !important;
+}
+
+.cardflex {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  background: linear-gradient(rgb(47, 239, 47),black,rgb(50, 192, 248),rgb(194, 194, 64));
+}

@@ -1,12 +1,19 @@
 import React from 'react'
-import './App.css'
-import NavScrollExample from '../WebPage/Webpage'
+import Navigationbar from './Components/Navigationbar'
+import Slider from './Components/Slider'
+import MusicCard from './Components/MusicCard'
+import CardMap from './Components/CardMap'
 
 function App() {
 
   return (
     <>
-      <NavScrollExample />
+      <Navigationbar />
+
+      <Slider />
+
+      <CardMap />
+
     </>
   )
 }
