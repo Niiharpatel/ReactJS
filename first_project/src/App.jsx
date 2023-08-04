@@ -24,6 +24,7 @@ import InputCom from './Input/InputCom'
 import Task from './Input/Task'
 import Delete from './Input/Delete'
 import Update from './Input/Update'
+import MultipleInput from './Input/MultipleInput'
 // import Bootcom from './Bootstrap/Bootcom'
 // import Bootmapcom from '../Task/BootCard/Bootmapcom'
 // import NavScrollExample from '../Webpage/Header'
@@ -107,7 +108,9 @@ function App() {
 
       {/* <Delete /> */}
 
-      <Update />
+      {/* <Update /> */}
+
+      <MultipleInput />
 
 
 
