@@ -91,7 +91,6 @@ function MultiTask() {
                             value={data.cname}
                             type="text"
                             placeholder='Enter Company Name'
-                            style={{ width: "350px" }}
                             onChange={(e) => showText(e)}
                         />
                     </Col>
@@ -158,6 +157,28 @@ function MultiTask() {
                     </Col>
                 </FormGroup>
 
+                <div style={{ marginInlineStart: "86px", marginBlockEnd: "15px" }}>
+                    <FormGroup
+                        check
+                        inline
+                    >
+
+                        <Input type="checkbox" name='name' />
+                        <Label check>
+                            Male
+                        </Label>
+                    </FormGroup>
+                    <FormGroup
+                        check
+                        inline
+                    >
+                        <Input type="checkbox" name='name' />
+                        <Label check>
+                            Female
+                        </Label>
+                    </FormGroup>
+                </div>
+
 
 
                 <FormGroup
@@ -182,39 +203,43 @@ function MultiTask() {
 
                     </Col>
                 </FormGroup>
-            </Form>
 
-            {arr.length > 0 ? (<Table striped bordered hover style={{ marginTop: "10px" }}>
-                <thead>
-                    <tr style={{ textAlign: "center" }}>
-                        <th>No.</th>
-                        <th>Name</th>
-                        <th>Website</th>
-                        <th>Address</th>
-                        <th>Type</th>
-                        <th style={{ backgroundColor: "red" }}>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {arr.map((e, i) => {
-                        return (
-                            <tr key={i}>
-                                <td>{i + 1}</td>
-                                <td>{e.cname}</td>
-                                <td>{e.website}</td>
-                                <td>{e.address}</td>
-                                <td>{e.type}</td>
 
-                                <td><button className='btn btn-danger' onClick={() => deletHandler()}>Delete</button>
-                                    <Button color="primary" className='ms-3' onClick={() => updateFun(i, e)}>
-                                        Update
-                                    </Button>
-                                </td>
-                            </tr>)
-                    })}
+            </Form >
 
-                </tbody>
-            </Table>) : null}
+            {
+                arr.length > 0 ? (<Table striped bordered hover style={{ marginTop: "10px" }}>
+                    <thead>
+                        <tr style={{ textAlign: "center" }}>
+                            <th>No.</th>
+                            <th>Name</th>
+                            <th>Website</th>
+                            <th>Address</th>
+                            <th>Type</th>
+                            <th style={{ backgroundColor: "red" }}>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {arr.map((e, i) => {
+                            return (
+                                <tr key={i}>
+                                    <td>{i + 1}</td>
+                                    <td>{e.cname}</td>
+                                    <td>{e.website}</td>
+                                    <td>{e.address}</td>
+                                    <td>{e.type}</td>
+
+                                    <td><button className='btn btn-danger' onClick={() => deletHandler()}>Delete</button>
+                                        <Button color="primary" className='ms-3' onClick={() => updateFun(i, e)}>
+                                            Update
+                                        </Button>
+                                    </td>
+                                </tr>)
+                        })}
+
+                    </tbody>
+                </Table>) : null
+            }
 
         </>
     )
