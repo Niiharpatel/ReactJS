@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { Button, Table } from 'react-bootstrap';
 
-function Delete() {
+function LocalStorage() {
 
     let [name, setName] = useState("");
     let [arr, setArr] = useState([]);
+    let [ind, setInd] = useState(null);
 
     function getData(e) {
         setName(e.target.value);
@@ -17,27 +18,51 @@ function Delete() {
 
         // ================== OR ================================
 
-        name.length > 0 ? (setArr([...arr, name]), setName("")):alert("Please enter name!")
+        name.length > 0 ? (setArr([...arr, name]), setName("")) : alert("Please enter name!")
+
+        localStorage.setItem("data", JSON.stringify([...arr, name]))
     }
 
     // ==========================================   Delete  ============================================================
 
     function deletHandler(index) {
-        arr.splice(index, 1,)
+        arr.splice(index, 1)
         setArr([...arr])
+
+        localStorage.setItem("data", JSON.stringify([...arr]))
     }
 
 
     function deleteAllFun() {
 
-        let ans = confirm("Are you sure want to delete all items?");
+        // let ans = confirm("Are you sure want to delete all items?");
 
-        ans == true ? setArr([]) : null;
+        // ans == true ? setArr([]) : null;
 
-        // document.getElementById('mess').innerText = "You Delete All Items!";
+        setArr([])
+
+        localStorage.setItem("data", setArr([]))
+    }
+
+
+    // ====================================================== Update =================================================================
+
+
+    function updateFun(index, data) {
+        setName(data);
+        setInd(index);
+
 
     }
 
+    function changeFun() {
+        arr.splice(ind, 1, name);
+        setArr([...arr]);
+        setName("");
+        setInd(null);
+
+        localStorage.setItem("data", JSON.stringify([...arr]))
+    }
 
     return (
         <>
@@ -48,6 +73,9 @@ function Delete() {
                 <button className='btn btn-success' style={{ marginLeft: "5px" }} onClick={() => setData()}>Add name</button>
 
                 <Button variant="dark" style={{ marginLeft: "30px" }} onClick={() => deleteAllFun()}>DeleteAll</Button>
+
+                <Button variant="primary" style={{ marginLeft: "30px" }} onClick={() => changeFun()}>Click to change</Button>
+
 
 
                 {/* ============== Conditional Rednoring =================================================== */}
@@ -66,7 +94,8 @@ function Delete() {
                                 <tr key={i}>
                                     <td>{i + 1}</td>
                                     <td>{e}</td>
-                                    <td><button className='btn btn-danger' onClick={() => deletHandler()}>Delete</button></td>
+                                    <td><button className='btn btn-danger' onClick={() => deletHandler()}>Delete</button>
+                                        <button className='btn btn-primary ms-4' onClick={() => updateFun(i, e)}>Update</button></td>
                                 </tr>)
                         })}
 
@@ -80,4 +109,4 @@ function Delete() {
     )
 }
 
-export default Delete
+export default LocalStorage;

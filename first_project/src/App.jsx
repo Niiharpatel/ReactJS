@@ -1,33 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
-import ClassProps from './Props/ClassProps'
-import Functional from '../FunctionalComp/Functional'
-import Mainsec from '../FunctionalComp/Mainsec'
-import Footerfun from '../FunctionalComp/Footerfun'
-import ClassCom from '../ClassComp/ClassCom'
-import Body from '../ClassComp/Body'
-import Footer from '../ClassComp/Footer'
+import SliderMap from './SliderUsingMap/SliderMap';
+import TestSlider from './SliderUsingMap/TestSlider';
+// import ClassProps from './Props/ClassProps'
+// import Functional from '../FunctionalComp/Functional'
+// import Mainsec from '../FunctionalComp/Mainsec'
+// import Footerfun from '../FunctionalComp/Footerfun'
+// import ClassCom from '../ClassComp/ClassCom'
+// import Body from '../ClassComp/Body'
+// import Footer from '../ClassComp/Footer'
 // import UsrState from '../../UsrState';
-import Fontcolorchange from './UseState/Fontcolorchange'
-import Fontcolorchange2 from './UseState/Fontcolorchange2'
-import FunProps from './Props/FunProps'
-import PropsDestructuring from './Props/PropsDestructering'
-import ConditionalRendor from './ConditionalRen-Map-Fragment/ConditionalRendor'
-import FragmentComp from './ConditionalRen-Map-Fragment/FragmentComp'
-import MapKey from './ConditionalRen-Map-Fragment/MapKey'
+// import Fontcolorchange from './UseState/Fontcolorchange'
+// import Fontcolorchange2 from './UseState/Fontcolorchange2'
+// import FunProps from './Props/FunProps'
+// import PropsDestructuring from './Props/PropsDestructering'
+// import ConditionalRendor from './ConditionalRen-Map-Fragment/ConditionalRendor'
+// import FragmentComp from './ConditionalRen-Map-Fragment/FragmentComp'
+// import MapKey from './ConditionalRen-Map-Fragment/MapKey'
 // import Task from './ConditionalRen-Map-Fragment/Task'
-import Mapcom from './ConditionalRen-Map-Fragment/Mapcom'
-import { Card } from 'react-bootstrap'
-import InputCom from './Input/InputCom'
-import Task from './Input/Task'
+// import Mapcom from './ConditionalRen-Map-Fragment/Mapcom'
+// import { Card } from 'react-bootstrap'
+// import InputCom from './Input/InputCom'
+// import Task from './Input/Task'
 import Delete from './Input/Delete'
 import Update from './Input/Update'
 import MultipleInput from './Input/MultipleInput'
+import LifeCycleMethod from './LifeCycleMethod/LifeCycleMethod';
+import MultiTask from './Input/MultiTask';
+import LocalStorage from './LocalStorage';
+import UseEffect from './Hooks/UseEffect';
+// import Sliderdata from './Input/SliderMap/Sliderdata'
 // import Bootcom from './Bootstrap/Bootcom'
 // import Bootmapcom from '../Task/BootCard/Bootmapcom'
-// import NavScrollExample from '../Webpage/Header'
+// import NavScrollExample from '../Webpage/Header'\
+
 
 
 
@@ -110,7 +118,26 @@ function App() {
 
       {/* <Update /> */}
 
-      <MultipleInput />
+      {/* <MultipleInput /> */}
+
+      {/* ======== Task ======= */}
+      <MultiTask />
+
+      {/* ========================================== Slider Map ==================================================== */}
+
+      {/* <SliderMap /> */}
+
+      {/* ========================================= Life Cycle Method ============================================= */}
+
+      {/* <LifeCycleMethod /> */}
+
+      {/* ========================================= Local Storage ============================================= */}
+
+      {/* <LocalStorage /> */}
+
+      {/* ========================================= UseEffect ============================================= */}
+
+      {/* <UseEffect /> */}
 
 
 

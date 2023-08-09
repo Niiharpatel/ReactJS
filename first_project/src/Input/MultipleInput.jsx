@@ -1,6 +1,5 @@
-import { Alert } from 'bootstrap';
 import React, { useState } from 'react'
-import { Button, Form, FormGroup, FormText, Input, Label, Table } from 'reactstrap'
+import { Button, Form, FormGroup, Input, Label, Table } from 'reactstrap'
 
 function MultipleInput() {
 
@@ -12,9 +11,11 @@ function MultipleInput() {
 
     const [arr, setArr] = useState([]);
 
+    const [ind, setIndex] = useState(null)
+
 
     function getData(e) {
-
+        console.log(e.target.name)
         setName({ ...name, [e.target.name]: e.target.value })
 
     }
@@ -22,21 +23,17 @@ function MultipleInput() {
 
     function addFunc() {
 
-        setArr([...arr, name]);
-        setName({
-            email: "",
-            name: "",
-            address: ""
-        });
+        if (name.email.length > 0 && name.name.length > 0 && name.address.length > 0) {
+            setArr([...arr, name]),
+                setName({
+                    email: "",
+                    name: "",
+                    address: ""
+                })
 
-
-        // arr.length > 0 ? (setArr([...arr, name]),
-        //     setName({
-        //         email: "",
-        //         name: "",
-        //         address: ""
-        //     })) : Alert("Please Fill Up Form!")
-
+        } else {
+            alert("Please Fill Up Form!")
+        }
     }
 
     function deletHandler(index) {
@@ -48,11 +45,33 @@ function MultipleInput() {
 
     function delAll() {
         setArr([])
+        setName({
+            email: "",
+            name: "",
+            address: ""
+        })
 
     }
 
     function updateFun(index, data) {
         setName(data)
+        setIndex(index)
+
+    }
+
+    function changeFun() {
+
+        if (ind || ind === 0) {
+
+            arr.splice(ind, 1, name);
+            setArr([...arr]);
+            setName({
+                email: "",
+                name: "",
+                address: ""
+            });
+            setIndex(null);
+        }
 
     }
 
@@ -68,7 +87,7 @@ function MultipleInput() {
                         id="exampleEmail"
                         name="email"
                         value={name.email}
-                        placeholder="with a placeholder"
+                        placeholder="Enter Email Id"
                         type="email"
                         style={{ width: "350px" }}
 
@@ -84,9 +103,9 @@ function MultipleInput() {
                     </Label>
                     <Input
                         id="exampleName"
-                        name="text"
-                        value={name.text}
-                        placeholder="Name placeholder"
+                        name={"name"}
+                        value={name.name}
+                        placeholder="Enter Name"
                         type="text"
                         style={{ width: "350px" }}
 
@@ -140,7 +159,7 @@ function MultipleInput() {
                             <tr key={i}>
                                 <td>{i + 1}</td>
                                 <td>{e.email}</td>
-                                <td>{e.text}</td>
+                                <td>{e.name}</td>
                                 <td>{e.address}</td>
                                 <td><button className='btn btn-danger' onClick={() => deletHandler()}>Delete</button>
                                     <Button color="primary" className='ms-3' onClick={() => updateFun(i, e)}>
