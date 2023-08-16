@@ -1,0 +1,27 @@
+Class Component Life Cycle:
+
+In a class component, there are several phases that a component goes through during its lifecycle:
+
+1. Mounting: This is when the component is being created and inserted into the DOM.
+constructor: Initializing state and binding methods.
+render: Rendering the component's UI.
+componentDidMount: Executed after the component is rendered. Good for setting up side-effects like fetching data.
+
+2. Updating: This phase occurs whenever a component's state or props change.
+shouldComponentUpdate: Decides if the component should re-render. Can be used for performance optimization.
+render: Re-renders the updated UI.
+componentDidUpdate: Called after the component re-renders due to state or props changes.
+
+3. Unmounting: This phase happens when a component is removed from the DOM.
+componentWillUnmount: Used to clean up resources, subscriptions, or timers.
+
+
+=> Functional Component with Hooks:
+
+Functional components with Hooks simplify the lifecycle and state management:
+
+State and Side Effects:
+
+useState: Allows you to add state to a functional component.
+useEffect: Handles side effects (data fetching, subscriptions) in a way similar to componentDidMount, componentDidUpdate, and componentWillUnmount combined.
+And that's it! Functional components with Hooks simplify the component lifecycle by combining various lifecycle methods into the useEffect hook. This approach makes it easier to manage state and side effects in a more straightforward and concise manner compared to traditional class components.
