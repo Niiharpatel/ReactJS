@@ -31,6 +31,7 @@ import LifeCycleMethod from './LifeCycleMethod/LifeCycleMethod';
 import MultiTask from './Input/MultiTask';
 import LocalStorage from './LocalStorage';
 import UseEffect from './Hooks/UseEffect';
+import ApiCall from './API/ApiCall';
 // import Sliderdata from './Input/SliderMap/Sliderdata'
 // import Bootcom from './Bootstrap/Bootcom'
 // import Bootmapcom from '../Task/BootCard/Bootmapcom'
@@ -121,7 +122,7 @@ function App() {
       {/* <MultipleInput /> */}
 
       {/* ======== Task ======= */}
-      <MultiTask />
+      {/* <MultiTask /> */}
 
       {/* ========================================== Slider Map ==================================================== */}
 
@@ -138,6 +139,8 @@ function App() {
       {/* ========================================= UseEffect ============================================= */}
 
       {/* <UseEffect /> */}
+
+      <ApiCall />
 
 
 

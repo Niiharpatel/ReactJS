@@ -7,12 +7,16 @@ function MultiTask() {
         cname: "",
         website: "",
         address: "",
-        type: ""
+        type: "",
+        area: "",
+        gender: ""
     })
 
     let [arr, setArr] = useState([]);
 
     let [ind, setIndex] = useState(null);
+
+    let [isChecked, setIsChecked] = useState(false)
 
     function showText(e) {
         console.log("=========", e.target.value);
@@ -29,8 +33,11 @@ function MultiTask() {
                 cname: "",
                 website: "",
                 address: "",
-                type: ""
+                type: "",
+                area: "",
+                gender: ""
             })
+
         } else {
             alert("Please Fill Up Form!")
         }
@@ -49,7 +56,10 @@ function MultiTask() {
             cname: "",
             website: "",
             address: "",
-            type: ""
+            type: "",
+            gender: "",
+            area: ""
+
         })
     }
 
@@ -68,10 +78,22 @@ function MultiTask() {
                 cname: "",
                 website: "",
                 address: "",
-                type: ""
+                type: "",
+                gender: "",
+                area: ""
+
             });
             setIndex(null);
         }
+    }
+
+    function checkBox(e) {
+        if (e.target.isChecked == true) {
+
+        } else if (e.target.checked == 'Female') {
+
+        }
+
     }
 
     return (
@@ -157,13 +179,45 @@ function MultiTask() {
                     </Col>
                 </FormGroup>
 
+                <FormGroup style={{ display: "flex", gap: "52px", alignItems: "center" }}>
+                    <Label for="exampleArea">
+                        Area
+                    </Label>
+                    <Input
+                        id="exampleArea"
+                        name="area"
+                        type="select"
+                        value={data.area}
+                        onChange={(e) => showText(e)}
+                    >
+                        <option>
+                            --- Please select area ---
+                        </option>
+                        <option>
+                            India
+                        </option>
+                        <option>
+                            America
+                        </option>
+                        <option>
+                            China
+                        </option>
+                        <option>
+                            UK
+                        </option>
+                        <option>
+                            UAE
+                        </option>
+                    </Input>
+                </FormGroup>
+
                 <div style={{ marginInlineStart: "86px", marginBlockEnd: "15px" }}>
                     <FormGroup
                         check
                         inline
                     >
 
-                        <Input type="checkbox" name='name' />
+                        <Input type="checkbox" value={data.male} name='gender' onChange={() => checkBox()} />
                         <Label check>
                             Male
                         </Label>
@@ -172,7 +226,7 @@ function MultiTask() {
                         check
                         inline
                     >
-                        <Input type="checkbox" name='name' />
+                        <Input type="checkbox" name='gender' value={data.female} onChange={() => checkBox()} />
                         <Label check>
                             Female
                         </Label>
@@ -216,6 +270,8 @@ function MultiTask() {
                             <th>Website</th>
                             <th>Address</th>
                             <th>Type</th>
+                            <th>Area</th>
+                            <th>Gender</th>
                             <th style={{ backgroundColor: "red" }}>Action</th>
                         </tr>
                     </thead>
@@ -228,6 +284,8 @@ function MultiTask() {
                                     <td>{e.website}</td>
                                     <td>{e.address}</td>
                                     <td>{e.type}</td>
+                                    <td>{e.area}</td>
+                                    <td>{e.target.gender}</td>
 
                                     <td><button className='btn btn-danger' onClick={() => deletHandler()}>Delete</button>
                                         <Button color="primary" className='ms-3' onClick={() => updateFun(i, e)}>
