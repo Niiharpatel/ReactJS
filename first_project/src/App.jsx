@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 import SliderMap from './SliderUsingMap/SliderMap';
 import TestSlider from './SliderUsingMap/TestSlider';
 // import ClassProps from './Props/ClassProps'
@@ -24,14 +24,16 @@ import TestSlider from './SliderUsingMap/TestSlider';
 // import { Card } from 'react-bootstrap'
 // import InputCom from './Input/InputCom'
 // import Task from './Input/Task'
-import Delete from './Input/Delete'
-import Update from './Input/Update'
-import MultipleInput from './Input/MultipleInput'
-import LifeCycleMethod from './LifeCycleMethod/LifeCycleMethod';
-import MultiTask from './Input/MultiTask';
-import LocalStorage from './LocalStorage';
-import UseEffect from './Hooks/UseEffect';
-import ApiCall from './API/ApiCall';
+// import Delete from './Input/Delete'
+// import Update from './Input/Update'
+// import MultipleInput from './Input/MultipleInput'
+// import LifeCycleMethod from './LifeCycleMethod/LifeCycleMethod';
+// import MultiTask from './Input/MultiTask';
+// import LocalStorage from './LocalStorage';
+// import UseEffect from './Hooks/UseEffect';
+// import ApiCall from './API/ApiCall';
+import ContextCom from './Hooks/Context/ContextCom';
+import UseRefCom from './Hooks/UseRef/UseRefCom';
 // import Sliderdata from './Input/SliderMap/Sliderdata'
 // import Bootcom from './Bootstrap/Bootcom'
 // import Bootmapcom from '../Task/BootCard/Bootmapcom'
@@ -136,11 +138,21 @@ function App() {
 
       {/* <LocalStorage /> */}
 
-      {/* ========================================= UseEffect ============================================= */}
+      {/* ========================================= Hooks ============================================= */}
 
       {/* <UseEffect /> */}
 
-      <ApiCall />
+      {/* <ContextCom /> */}
+
+      <UseRefCom />
+
+
+      {/* ==================================== API Call =======================================================*/}
+
+      {/* <ApiCall /> */}
+
+
+
 
 
 
