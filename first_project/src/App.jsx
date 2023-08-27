@@ -34,6 +34,8 @@ import TestSlider from './SliderUsingMap/TestSlider';
 // import ApiCall from './API/ApiCall';
 import ContextCom from './Hooks/Context/ContextCom';
 import UseRefCom from './Hooks/UseRef/UseRefCom';
+import UseReducer from './Hooks/UseReducer/UseReducer';
+import UseReducerObj from './Hooks/UseReducer/UseReducerObj';
 // import Sliderdata from './Input/SliderMap/Sliderdata'
 // import Bootcom from './Bootstrap/Bootcom'
 // import Bootmapcom from '../Task/BootCard/Bootmapcom'
@@ -109,6 +111,7 @@ function App() {
 
       {/* =============================================== WebPage ============================================== */}
 
+
       {/* <NavScrollExample /> */}
 
       {/* ================================================ Input =============================================== */}
@@ -144,7 +147,11 @@ function App() {
 
       {/* <ContextCom /> */}
 
-      <UseRefCom />
+      {/* <UseRefCom /> */}
+
+      {/* <UseReducer /> */}
+
+      {/* <UseReducerObj /> */}
 
 
       {/* ==================================== API Call =======================================================*/}
