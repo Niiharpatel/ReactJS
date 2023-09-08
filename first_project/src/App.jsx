@@ -36,6 +36,8 @@ import ContextCom from './Hooks/Context/ContextCom';
 import UseRefCom from './Hooks/UseRef/UseRefCom';
 import UseReducer from './Hooks/UseReducer/UseReducer';
 import UseReducerObj from './Hooks/UseReducer/UseReducerObj';
+import UseMemo from './Hooks/UseMemo/UseMemo';
+import UseCallBack from './Hooks/UseCallBack/UseCallBack';
 // import Sliderdata from './Input/SliderMap/Sliderdata'
 // import Bootcom from './Bootstrap/Bootcom'
 // import Bootmapcom from '../Task/BootCard/Bootmapcom'
@@ -153,10 +155,15 @@ function App() {
 
       {/* <UseReducerObj /> */}
 
+      {/* <UseMemo /> */}
+
+      <UseCallBack />
+
 
       {/* ==================================== API Call =======================================================*/}
 
       {/* <ApiCall /> */}
+
 
 
 
