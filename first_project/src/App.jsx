@@ -1,9 +1,9 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css';
-import SliderMap from './SliderUsingMap/SliderMap';
-import TestSlider from './SliderUsingMap/TestSlider';
+// import './App.css';
+// import SliderMap from './SliderUsingMap/SliderMap';
+// import TestSlider from './SliderUsingMap/TestSlider';
 // import ClassProps from './Props/ClassProps'
 // import Functional from '../FunctionalComp/Functional'
 // import Mainsec from '../FunctionalComp/Mainsec'
@@ -32,16 +32,18 @@ import TestSlider from './SliderUsingMap/TestSlider';
 // import LocalStorage from './LocalStorage';
 // import UseEffect from './Hooks/UseEffect';
 // import ApiCall from './API/ApiCall';
-import ContextCom from './Hooks/Context/ContextCom';
-import UseRefCom from './Hooks/UseRef/UseRefCom';
-import UseReducer from './Hooks/UseReducer/UseReducer';
-import UseReducerObj from './Hooks/UseReducer/UseReducerObj';
-import UseMemo from './Hooks/UseMemo/UseMemo';
-import UseCallBack from './Hooks/UseCallBack/UseCallBack';
+// import ContextCom from './Hooks/Context/ContextCom';
+// import UseRefCom from './Hooks/UseRef/UseRefCom';
+// import UseReducer from './Hooks/UseReducer/UseReducer';
+// import UseReducerObj from './Hooks/UseReducer/UseReducerObj';
+// import UseMemo from './Hooks/UseMemo/UseMemo';
+// import UseCallBack from './Hooks/UseCallBack/UseCallBack';
 // import Sliderdata from './Input/SliderMap/Sliderdata'
 // import Bootcom from './Bootstrap/Bootcom'
 // import Bootmapcom from '../Task/BootCard/Bootmapcom'
 // import NavScrollExample from '../Webpage/Header'\
+import AppCom from './Redux/AppCom';
+
 
 
 
@@ -157,12 +159,16 @@ function App() {
 
       {/* <UseMemo /> */}
 
-      <UseCallBack />
+      {/* <UseCallBack /> */}
 
 
       {/* ==================================== API Call =======================================================*/}
 
       {/* <ApiCall /> */}
+
+      {/* ======================================== Redux ======================================================== */}
+
+      <AppCom />
 
 
 
