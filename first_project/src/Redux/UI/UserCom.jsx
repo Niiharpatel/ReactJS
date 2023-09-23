@@ -10,8 +10,8 @@ function UserCom(props) {
       <Table bordered>
         <thead>
           <tr>
-            <th>Sr. </th>
-            <th> Email</th>
+            <th>Sr.</th>
+            <th>Email</th>
             <th>Password</th>
             <th>Action</th>
           </tr>
@@ -26,7 +26,7 @@ function UserCom(props) {
                   {index === i ? e?.password : "*".repeat(e?.password?.length)}
                 </td>
                 <td>
-                  {index || index === 0 ? (
+                  {(index || index === 0) && index === i ? (
                     <Button
                       color="primary"
                       className="ms-2"

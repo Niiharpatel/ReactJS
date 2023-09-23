@@ -15,7 +15,6 @@ function MultipleInput() {
 
 
     function getData(e) {
-        console.log(e.target.name)
         setName({ ...name, [e.target.name]: e.target.value })
 
     }
