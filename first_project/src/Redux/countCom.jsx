@@ -79,3 +79,4 @@ const toDispatchToProps = (dispatch) => {
 };
 
 export default connect(toStateToProps, toDispatchToProps)(countCom);
+
