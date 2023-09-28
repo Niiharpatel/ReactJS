@@ -15,6 +15,12 @@ const amountslice = createSlice({
         reset: ((state) => {
             state.amount = 0;
         })
+    },
+
+    extraReducers: {
+        ["count/increment"]: (state) => {
+            state.amount += 100; 
+        }
     }
 });
 
