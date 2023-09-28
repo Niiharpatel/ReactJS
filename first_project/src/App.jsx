@@ -42,11 +42,8 @@
 // import Bootcom from './Bootstrap/Bootcom'
 // import Bootmapcom from '../Task/BootCard/Bootmapcom'
 // import NavScrollExample from '../Webpage/Header'\
-import AppCom from './Redux/AppCom';
-
-
-
-
+import AppCom from "./Redux/AppCom";
+import AppToolKit from "./Toolkit/AppToolKit";
 
 function App() {
   return (
@@ -56,7 +53,6 @@ function App() {
      <Body />
 
      <Footer /> */}
-
 
       {/* <Functional />
 
@@ -101,7 +97,6 @@ function App() {
 
       {/* <Task /> */}
 
-
       {/* ============================================== Card ================================================= */}
 
       {/* <Mapcom /> */}
@@ -112,15 +107,12 @@ function App() {
 
       {/* <Bootmapcom /> */}
 
-
       {/* =============================================== WebPage ============================================== */}
-
 
       {/* <NavScrollExample /> */}
 
       {/* ================================================ Input =============================================== */}
       {/* <InputCom /> */}
-
 
       {/* <Task /> */}
 
@@ -161,26 +153,17 @@ function App() {
 
       {/* <UseCallBack /> */}
 
-
       {/* ==================================== API Call =======================================================*/}
 
       {/* <ApiCall /> */}
 
       {/* ======================================== Redux ======================================================== */}
 
-      <AppCom />
+      {/* <AppCom /> */}
 
-
-
-
-
-
-
-
-
+      <AppToolKit />
     </div>
   );
 }
 
-export default App
-
+export default App;
