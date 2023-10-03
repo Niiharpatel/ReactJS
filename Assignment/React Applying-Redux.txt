@@ -1,0 +1,16 @@
+(1)   What is Redux ?
+Ans : Redux helps you write applications that behave consistently, run in different         environments (client, server, and native), and are easy to test.
+
+(2)   What is Redux Thunk used for?
+Ans : The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. The inner function receives the store methods dispatch and getState as parameters.
+
+(3)   What is Pure Component? When to use Pure Component over Component?
+Ans : React pure components are the components that do not re-render when the value of props and state has been updated with the same values.
+
+      It is the type of component which re-renders only when the props passed to it changes 
+   and not even if its parent component re-renders or if the shouldComponentUpdate()method is called.
+
+(4)   What is the second argument that can optionally be passed tosetState and what is 
+      its purpose?
+Ans : The second argument that can optionally be passed to setState is a callback function which gets called immediately after the setState is completed and the components get re-rendered.
+
