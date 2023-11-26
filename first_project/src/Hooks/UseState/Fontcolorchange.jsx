@@ -1,17 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 function Fontcolorchange() {
-    const [textcolor, settextcolor] = useState("red");
+  const [textcolor, setTextcolor] = useState("red");
 
-    function chanegColor() {
+  function changeColor() {
+    setTextcolor("green");
+  }
 
-        settextcolor("green");
-
-    }
-    return (
-        <div><h1 style={{ color: textcolor }}>My name is Niihar</h1>
-            <button onClick={() => chanegColor()}>Click Here</button></div>
-    )
+  return (
+    <div>
+      <h1 style={{ color: textcolor }}>My name is Niihar</h1>
+      <button onClick={() => changeColor()}>Click Here</button>
+    </div>
+  );
 }
 
-export default Fontcolorchange
+export default Fontcolorchange;

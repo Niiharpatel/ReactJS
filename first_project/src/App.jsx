@@ -8,11 +8,16 @@
 // import Functional from '../FunctionalComp/Functional'
 // import Mainsec from '../FunctionalComp/Mainsec'
 // import Footerfun from '../FunctionalComp/Footerfun'
-// import ClassCom from '../ClassComp/ClassCom'
-// import Body from '../ClassComp/Body'
+import ClassCom from "../ClassComp/ClassCom";
+import Body from "../ClassComp/Body";
+import Crud from "./Input/crud";
+import MultipleInput from "./Input/MultipleInput";
+import AppCom from "./Redux/AppCom";
+import LocalStorage from "./LocalStorage";
+import ReduxCrud from "./CRUD/Redux_Crud/ReduxCrud";
+import Wrapper from "./CRUD/Redux_ToolKit_Crud/Wrapper";
 // import Footer from '../ClassComp/Footer'
 // import UsrState from '../../UsrState';
-// import Fontcolorchange from './UseState/Fontcolorchange'
 // import Fontcolorchange2 from './UseState/Fontcolorchange2'
 // import FunProps from './Props/FunProps'
 // import PropsDestructuring from './Props/PropsDestructering'
@@ -42,126 +47,85 @@
 // import Bootcom from './Bootstrap/Bootcom'
 // import Bootmapcom from '../Task/BootCard/Bootmapcom'
 // import NavScrollExample from '../Webpage/Header'\
-import AppCom from "./Redux/AppCom";
-import AppToolKit from "./Toolkit/AppToolKit";
+// import AppCom from "./Redux/AppCom";
+// import AppToolKit from "./Toolkit/AppToolKit";
+// import Fontcolorchange from "./Hooks/UseState/Fontcolorchange";
+// import Fontcolorchange2 from "./Hooks/UseState/Fontcolorchange2";
+// import FunProps from "./Props/FunProps";
+// import PropsDestructuring from "./Props/PropsDestructering";
+// import ConditionalRendor from "./ConditionalRen-Map-Fragment/ConditionalRendor";
+// import MultipleInput from "./Input/MultipleInput";
 
 function App() {
   return (
     <div>
-      {/* <ClassCom />
-
-     <Body />
-
-     <Footer /> */}
-
+      {/* <ClassCom /> */}
+      {/* <Body /> */}
+      {/* <Footer /> */}
       {/* <Functional />
 
      <Mainsec />
 
      <Footerfun /> */}
-
       {/* <UsrState /> */}
-
       {/* <Fontcolorchange /> */}
-
       {/* <Fontcolorchange2 /> */}
-
       {/* <FunProps name={"Niihar"} /> */}
-
       {/* <ClassProps name={"This is class props"} /> */}
-
       {/* <FunProps obj={{
       name: "Niihar",
        age: 23
      }} /> */}
-
       {/*================================ Props Destructering ================================================ */}
-
       {/* <PropsDestructuring name={"Niihar"} age={23} /> */}
-
       {/* ================================ Conditional Rendering ============================================== */}
-
-      {/* <ConditionalRendor isMale={false} />
-
-      <ConditionalRendor isMale={true} /> */}
-
+      {/* <ConditionalRendor isMale={false} /> */}
+      {/* <ConditionalRendor isMale={true} />  */}
       {/* <ConditionalRendor isMale={true} isYoung={true} /> */}
-
       {/* ==================================== Fragment ====================================================== */}
-
       {/* <FragmentComp /> */}
-
       {/* ========================================= Map ====================================================== */}
-
       {/* <MapKey /> */}
-
       {/* <Task /> */}
-
       {/* ============================================== Card ================================================= */}
-
       {/* <Mapcom /> */}
-
       {/* ================================================= Bootstrap ========================================= */}
-
       {/* <Bootcom /> */}
-
       {/* <Bootmapcom /> */}
-
       {/* =============================================== WebPage ============================================== */}
-
       {/* <NavScrollExample /> */}
-
       {/* ================================================ Input =============================================== */}
       {/* <InputCom /> */}
-
       {/* <Task /> */}
-
       {/* <Delete /> */}
-
       {/* <Update /> */}
-
       {/* <MultipleInput /> */}
-
       {/* ======== Task ======= */}
       {/* <MultiTask /> */}
-
       {/* ========================================== Slider Map ==================================================== */}
-
       {/* <SliderMap /> */}
-
       {/* ========================================= Life Cycle Method ============================================= */}
-
       {/* <LifeCycleMethod /> */}
-
       {/* ========================================= Local Storage ============================================= */}
-
       {/* <LocalStorage /> */}
-
       {/* ========================================= Hooks ============================================= */}
-
       {/* <UseEffect /> */}
-
       {/* <ContextCom /> */}
-
       {/* <UseRefCom /> */}
-
       {/* <UseReducer /> */}
-
       {/* <UseReducerObj /> */}
-
       {/* <UseMemo /> */}
-
       {/* <UseCallBack /> */}
-
       {/* ==================================== API Call =======================================================*/}
-
       {/* <ApiCall /> */}
-
       {/* ======================================== Redux ======================================================== */}
-
       {/* <AppCom /> */}
+      {/* <AppToolKit /> */}
+      {/* <Crud /> */}
+      {/* ========================================== CRUD ====================================================== */}
+      {/* <ReduxCrud /> */}
 
-      <AppToolKit />
+      <Wrapper />
     </div>
   );
 }

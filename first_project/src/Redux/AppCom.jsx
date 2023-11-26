@@ -11,13 +11,13 @@ export default function AppCom() {
         <>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", height: "100vh" }}>
                 <Provider store={store}>
-                    {/* <AmountCom />
+                    {/* <AmountCom /> */}
 
-                    <CountCom /> */}
+                    {/* <CountCom /> */}
 
-                    <GetDataCom />
+                     <GetDataCom />
 
-                    <UserCom />
+                    <UserCom /> 
                 </Provider>
             </div>
         </>

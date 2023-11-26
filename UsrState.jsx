@@ -1,9 +1,11 @@
 // import React, { useState } from "react";
+import React from "react";
+
+import { useState } from "react";
 
 // function UsrState() {
 
 //     const [count1, setCount] = useState(0);
-
 
 //     // let x = 0;
 //     // function count() {
@@ -15,7 +17,6 @@
 //         setCount(count1 + 1);
 //         // console.log("x:");
 //     }
-
 
 //     return (
 //         <div>
@@ -31,8 +32,6 @@
 
 // export default UsrState
 
-
-
 // import React, { useState } from "react";
 
 // function UsrState() {
@@ -40,14 +39,11 @@
 //     const [count1, setCount] = useState(true);
 //     const [name, setName] = useState("nihar");
 
-
-
 //     // let x = 0;
 //     // function count() {
 //     //     x++;
 //     //     let abc = console.log("x:", x);
 //     // }
-
 
 //     // let n = "nihar"
 //     // let n2 = "yash"
@@ -56,7 +52,6 @@
 //     // setName(count1 ? n : n2);
 //     // // console.log("x:");
 //     // // }
-
 
 //     return (
 //         <div>
@@ -109,5 +104,16 @@
 // export default UsrState;
 
 
-// ====================================== Change color ====================================================
+//==================================================================================================================
 
+// function UsrState() {
+//   let [count, setCount] = useState(0);
+//   return (
+//     <>
+//       <div>Count:{count}</div>
+//       <button onClick={() => setCount(count + 1)}>Click to add</button>
+//     </>
+//   );
+// }
+
+// export default UsrState;
