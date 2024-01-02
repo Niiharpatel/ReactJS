@@ -8,7 +8,7 @@ export default function ReduxCrud() {
     city: "",
   });
 
-  //  ===================== READ ======================
+  //  ===================== READ ========================
 
   let [arr, setArr] = useState([]);
 
@@ -20,7 +20,7 @@ export default function ReduxCrud() {
     });
   }
 
-  //  ===================== UPDATE ======================
+  //  ===================== UPDATE =======================
 
   let [ind, setInd] = useState(null);
 
@@ -41,7 +41,7 @@ export default function ReduxCrud() {
     }
   }
 
-  //  ===================== DELETE ======================
+  //  ===================== DELETE ========================
 
   function deleteFun(i) {
     arr.splice(i, 1);
@@ -55,7 +55,7 @@ export default function ReduxCrud() {
 
   return (
     <>
-      <h1 className="text-center">Crud Operation</h1>
+      <h1>Crud Operation</h1>
 
       <label htmlFor="name">Name:</label>
       <input

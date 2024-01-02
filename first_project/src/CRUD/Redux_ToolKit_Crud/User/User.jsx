@@ -48,7 +48,6 @@ export default function User() {
 
   function deleteFun(ind) {
     dispatch(removeUser(ind));
-    
   }
 
   return (
