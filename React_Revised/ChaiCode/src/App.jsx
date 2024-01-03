@@ -1,13 +1,20 @@
 import "./App.css";
-import CurrencyConv from "./CurrencyProject/CurrencyConv/CurrencyConv";
-import Router from "./Router/Router";
+import Todo from "./TodoContextLocal/Todo";
 
 function App() {
   return (
     <>
       {/* <CurrencyConv /> */}
+      {/* <Router /> */}
 
-      <Router />
+      {/* <UserContextProvider>
+        <Login />
+        <Profile />
+      </UserContextProvider> */}
+
+      {/* <Theme /> */}
+
+      <Todo />
     </>
   );
 }
