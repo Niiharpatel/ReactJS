@@ -1,10 +1,12 @@
 import "./App.css";
-import SimplCrud from "./SimpleCrud/SimplCrud";
+import Wrapper from "./ReduxCrud/Wrapper";
 
 function App() {
   return (
     <>
-      <SimplCrud />
+      {/* <SimplCrud /> */}
+
+      <Wrapper />
     </>
   );
 }
